@@ -1,0 +1,38 @@
+.image-blurred-edge {
+   
+  border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex .badge {
+  width: 100px;
+  text-align: center; 
+}
+
+.mybtn{
+  display: flex;
+  justify-content: center;
+}
+.instrument{
+  height: 5rem;
+  width: 5rem;
+  
+}
+
+header{
+  position: fixed;
+  z-index: 100;
+}
+
+.fixed-element {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.empty-space{
+  height: 30px;
+}
