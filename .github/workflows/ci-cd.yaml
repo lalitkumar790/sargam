@@ -1,0 +1,29 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build and Test
+      run: |
+        # Add your build and test commands here
+        # For example:
+        npm install
+        npm run build
+        # Add HTML/CSS validation checks here
+
+    - name: Deploy
+      if: success()
+      run: |
+        # Add deployment commands here
+        # For example, if you're deploying to AWS S3:
+        # aws s3 sync ./build/ s3://your-bucket-name
