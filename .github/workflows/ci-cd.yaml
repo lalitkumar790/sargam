@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: CI
 
 on:
   push:
@@ -10,33 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-    - name: Build and Test
-      run: |
-        # Add your build and test commands here
-        # For example:
-        npm install
-        npm run build
-        # Add HTML/CSS validation checks here
-
-    - name: Deploy
-      if: success()
-      run: |
-        # Add deployment commands here
-        # For example, if you're deploying to AWS S3:
-        # aws s3 sync ./build/ s3://your-bucket-name
-        - name: Build and Push Docker Image
-      run: |
-        docker build -t your-docker-username/web-app:$GITHUB_SHA .
-        docker login -u your-docker-username -p ${{ secrets.DOCKER_PASSWORD }}
-        docker push your-docker-username/web-app:$GITHUB_SHA
-
-    - name: Deploy to Server/Cloud Storage
-      run: |
-        # Add deployment commands here
-        # For example, if you're using a cloud storage service:
-        # aws s3 sync ./build/ s3://your-bucket-name
-
-        
+      - name: Build and Test
+        run: |
+          # Add commands to build and test your web application here
+          # For example:
+          # npm install
+          # npm run build
+          # npm test
