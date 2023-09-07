@@ -27,3 +27,16 @@ jobs:
         # Add deployment commands here
         # For example, if you're deploying to AWS S3:
         # aws s3 sync ./build/ s3://your-bucket-name
+        - name: Build and Push Docker Image
+      run: |
+        docker build -t your-docker-username/web-app:$GITHUB_SHA .
+        docker login -u your-docker-username -p ${{ secrets.DOCKER_PASSWORD }}
+        docker push your-docker-username/web-app:$GITHUB_SHA
+
+    - name: Deploy to Server/Cloud Storage
+      run: |
+        # Add deployment commands here
+        # For example, if you're using a cloud storage service:
+        # aws s3 sync ./build/ s3://your-bucket-name
+
+        
