@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Musical Instruments</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+
+  <body>
+
+    <!-- Dark mode toggle -->
+    <div class="d-flex justify-content-end px-4 pt-3">
+      <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary">🌙 Dark Mode</button>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO  — original, untouched
+    ══════════════════════════════════════════════════════ -->
+    <div class="px-4 py-5 my-5 text-center">
+      <img
+        class="d-block mx-auto mb-4"
+        src="./images/map.png"
+        alt=""
+        height="200"
+      />
+      <h1 class="display-5 fw-bold text-body-emphasis">Saregama</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          "Saregama" is a term used in Indian music, representing the first few
+          notes of the Indian musical scale, similar to "Do-Re-Mi" in Western
+          music. In Indian music, these notes are "Sa-Re-Ga-Ma-Pa-Dha-Ni".
+          "Saregama" forms the melodic foundation of a musical composition in
+          Indian classical and film music. It is essential for understanding and
+          creating melodies in the Indian music tradition."
+        </p>
+      </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         SITAR — original, untouched
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/sitar.jpg"
+            class="d-block mx-lg-auto img-fluid image-blurred-edge"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sitar</h1>
+          <p class="lead">
+            The sitar is one of the most iconic stringed instruments in Indian
+            classical music. It is commonly associated with the melody and is
+            often used to play intricate and elaborate "ragas" (melodic scales).
+            Sitar players skillfully produce the "Saregama" notes and explore
+            various melodic patterns through the frets and strings.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mybtn">
+      <button type="button" class="btn btn-light instrument" data-instrument="sitar">
+        <img src="./images/sitar-icon.png" height="60px" />
+      </button>
+    </div>
+
+    <div class="d-flex gap-2 justify-content-center py-5">
+      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill note-badge sitar">Sa</span>
+      <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill note-badge sitar">Re</span>
+      <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill note-badge sitar">Ga</span>
+      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill note-badge sitar">Ma</span>
+      <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill note-badge sitar">Pa</span>
+      <span class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill note-badge sitar">Dha</span>
+      <span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill note-badge sitar">Ni</span>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         FLUTE — original, untouched
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/Flute.jpg.jpg"
+            class="d-block mx-lg-auto img-fluid image-blurred-edge"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Flute</h1>
+          <p class="lead">
+            The bamboo flute is an instrument that is widely used in Indian
+            classical music. Flute players produce the "Saregama" notes by
+            controlling the breath and finger positions, allowing for beautiful
+            and emotive melodies
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mybtn">
+      <button type="button" class="btn btn-light instrument" data-instrument="flute">
+        <img src="./images/flute-icon.png" height="60px" />
+      </button>
+    </div>
+
+    <div class="d-flex gap-2 justify-content-center py-5">
+      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill note-badge flute">Sa</span>
+      <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill note-badge flute">Re</span>
+      <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill note-badge flute">Ga</span>
+      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill note-badge flute">Ma</span>
+      <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill note-badge flute">Pa</span>
+      <span class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill note-badge flute">Dha</span>
+      <span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill note-badge flute">Ni</span>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         TABLA — original, untouched
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/tabla.jpg"
+            class="d-block mx-lg-auto img-fluid image-blurred-edge"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Tabla</h1>
+          <p class="lead">
+            The tabla is a pair of hand drums that forms the backbone of rhythm
+            in Indian music. It consists of two drums, the smaller one is called
+            "dayan" (right hand) and the larger one "bayan" (left hand). Tabla
+            players use various strokes and techniques to create intricate
+            rhythmic patterns that complement the melodic aspect of the music
+            represented by "Saregama."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mybtn">
+      <button type="button" class="btn btn-light instrument" data-instrument="tabla">
+        <img src="./images/tabla-icon.png" height="60px" />
+      </button>
+    </div>
+
+    <div class="d-flex gap-2 justify-content-center py-5">
+      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill note-badge tabla">Sa</span>
+      <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill note-badge tabla">Re</span>
+      <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill note-badge tabla">Ga</span>
+      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill note-badge tabla">Ma</span>
+      <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill note-badge tabla">Pa</span>
+      <span class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill note-badge tabla">Dha</span>
+      <span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill note-badge tabla">Ni</span>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         HARMONIUM — original, untouched
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/Harmonium.png"
+            class="d-block mx-lg-auto img-fluid image-blurred-edge"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Harmonium</h1>
+          <p class="lead">
+            The harmonium is a keyboard instrument that plays an essential role
+            in Indian classical and devotional music. It provides support to the
+            vocalist or instrumentalist by playing the "Saregama" notes and
+            maintaining the pitch and harmony of the composition.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mybtn">
+      <button type="button" class="btn btn-light instrument" data-instrument="harmonium">
+        <img src="./images/harmonium-icon.png" height="60px" />
+      </button>
+    </div>
+
+    <div class="d-flex gap-2 justify-content-center py-5">
+      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill note-badge harmonium">Sa</span>
+      <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill note-badge harmonium">Re</span>
+      <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill note-badge harmonium">Ga</span>
+      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill note-badge harmonium">Ma</span>
+      <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill note-badge harmonium">Pa</span>
+      <span class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill note-badge harmonium">Dha</span>
+      <span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill note-badge harmonium">Ni</span>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         VIOLIN — original (typo fixed)
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/violin.jpg"
+            class="d-block mx-lg-auto img-fluid image-blurred-edge"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Violin</h1>
+          <p class="lead">
+            Though originally not an Indian instrument, the violin has been
+            integrated into Indian classical music and plays a crucial role as
+            an accompanying instrument. It adds depth and richness to the
+            melodic aspects of the music, including the "Saregama" notes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mybtn">
+      <button type="button" class="btn btn-light instrument" data-instrument="violin">
+        <img src="./images/violin-icon.png" height="60px" />
+      </button>
+    </div>
+
+    <div class="d-flex gap-2 justify-content-center py-5">
+      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill note-badge violin">Sa</span>
+      <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill note-badge violin">Re</span>
+      <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill note-badge violin">Ga</span>
+      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill note-badge violin">Ma</span>
+      <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill note-badge violin">Pa</span>
+      <span class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill note-badge violin">Dha</span>
+      <span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill note-badge violin">Ni</span>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         SAROD — original, untouched
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/sarod.jpg"
+            class="d-block mx-lg-auto img-fluid image-blurred-edge"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sarod</h1>
+          <p class="lead">
+            The sarod is a beautiful musical instrument known for its soulful
+            and captivating sound. It is a stringed instrument that belongs to
+            the lute family and is widely used in the classical music of North
+            India, particularly in the Hindustani classical tradition. The sarod
+            is also occasionally used in certain forms of traditional and folk
+            music.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mybtn">
+      <button type="button" class="btn btn-light instrument" data-instrument="sarod">
+        <img src="./images/sarod-icon.png" height="60px" />
+      </button>
+    </div>
+
+    <div class="d-flex gap-2 justify-content-center py-5">
+      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill note-badge sarod">Sa</span>
+      <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill note-badge sarod">Re</span>
+      <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill note-badge sarod">Ga</span>
+      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill note-badge sarod">Ma</span>
+      <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill note-badge sarod">Pa</span>
+      <span class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill note-badge sarod">Dha</span>
+      <span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill note-badge sarod">Ni</span>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         AUDIO CONTROLS — new, plain Bootstrap
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <h5 class="fw-semibold text-body-emphasis mb-1">Audio Controls</h5>
+      <p class="text-body-secondary small mb-4">Adjust sound for the selected instrument.</p>
+      <div class="row g-4">
+        <div class="col-sm-4">
+          <label class="form-label small fw-semibold" for="volumeSlider">Volume</label>
+          <input type="range" class="form-range" id="volumeSlider" min="0" max="1" step="0.01" value="0.85" />
+          <div class="d-flex justify-content-between">
+            <small class="text-body-secondary">0%</small>
+            <small id="volumeVal" class="text-body-secondary">85%</small>
+            <small class="text-body-secondary">100%</small>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <label class="form-label small fw-semibold" for="pitchSlider">
+            Pitch Shift <span class="fw-normal text-body-secondary">(semitones)</span>
+          </label>
+          <input type="range" class="form-range" id="pitchSlider" min="-12" max="12" step="1" value="0" />
+          <div class="d-flex justify-content-between">
+            <small class="text-body-secondary">−12</small>
+            <small id="pitchVal" class="text-body-secondary">0</small>
+            <small class="text-body-secondary">+12</small>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <label class="form-label small fw-semibold" for="reverbSlider">Reverb</label>
+          <input type="range" class="form-range" id="reverbSlider" min="0" max="1" step="0.01" value="0.15" />
+          <div class="d-flex justify-content-between">
+            <small class="text-body-secondary">Dry</small>
+            <small id="reverbVal" class="text-body-secondary">15%</small>
+            <small class="text-body-secondary">Wet</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         RECORDING STUDIO — new, plain Bootstrap
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <h5 class="fw-semibold text-body-emphasis mb-1">🎙️ Recording Studio</h5>
+      <p class="text-body-secondary small mb-4">
+        Select an instrument, hit Record, play notes, then Replay.
+      </p>
+      <div class="border rounded-3 p-4 bg-body-tertiary">
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+          <button id="recordBtn" class="btn btn-sm btn-outline-danger">⏺ Record</button>
+          <button id="replayBtn" class="btn btn-sm btn-outline-success" disabled>▶ Replay</button>
+          <button id="clearBtn"  class="btn btn-sm btn-outline-secondary" disabled>🗑 Clear</button>
+          <span id="recordStatus" class="text-body-secondary small fst-italic ms-1">Ready — press Record to start</span>
+        </div>
+        <div id="recordedNotes" class="recorded-strip"></div>
+      </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         SARGAM ROLL anchor — section injected by sargam-roll.js
+    ══════════════════════════════════════════════════════ -->
+    <div id="sargamRollAnchor"></div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         BUBBLE MELODY GAME — new, plain Bootstrap
+    ══════════════════════════════════════════════════════ -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <h5 class="fw-semibold text-body-emphasis mb-1">🎮 Melody Bubble Drop</h5>
+      <p class="text-body-secondary small mb-3">
+        Pick a raga, select your instrument above, then press Play.
+        Bubbles fall and play each note on landing.
+      </p>
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <button class="btn btn-sm btn-outline-secondary raga-btn active" data-melody="Yaman">Yaman</button>
+        <button class="btn btn-sm btn-outline-secondary raga-btn" data-melody="Bhairav">Bhairav</button>
+        <button class="btn btn-sm btn-outline-secondary raga-btn" data-melody="Bhupali">Bhupali</button>
+        <button class="btn btn-sm btn-outline-secondary raga-btn" data-melody="Desh">Desh</button>
+        <button class="btn btn-sm btn-outline-secondary raga-btn" data-melody="Malkauns">Malkauns</button>
+      </div>
+      <div class="border rounded-3 overflow-hidden mb-3">
+        <canvas id="bubbleCanvas"></canvas>
+      </div>
+      <div class="d-flex flex-wrap align-items-center gap-3">
+        <button id="startGameBtn" class="btn btn-sm btn-outline-primary">▶ Play Melody</button>
+        <button id="stopGameBtn"  class="btn btn-sm btn-outline-secondary" disabled>⏹ Stop</button>
+        <span id="gameStatus" class="text-body-secondary small fst-italic"></span>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         FOOTER — original, untouched
+    ══════════════════════════════════════════════════════ -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">Made by Lalit Kumar</span>
+          <br />
+          <span class="mb-3 mb-md-0 text-body-secondary">© All Rights Reserved</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="https://www.linkedin.com/in/lalitkumar020/">
+              <img src="./images/linkedin-icon.png" class="bi" width="24" height="24" />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <div class="empty-space"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         STICKY FOOTER BAR — original, untouched
+    ══════════════════════════════════════════════════════ -->
+    <footer class="footer mt-auto py-3 bg-body-tertiary fixed-element">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span class="text-body-secondary small">
+          Instruction: To play any instrument, click on its icon, then press the buttons or keyboard shortcuts(
+          <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">a</span>
+          <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">s</span>
+          <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill">d</span>
+          <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">f</span>
+          <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">j</span>
+          <span class="badge bg-danger-subtle border border-danger-subtle text-danger-emphasis rounded-pill">k</span>
+          <span class="badge bg-dark-subtle border border-dark-subtle text-dark-emphasis rounded-pill">l</span>
+          )
+        </span>
+        <span id="activeInstrumentLabel" class="text-body-secondary small fst-italic">Sitar selected</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--
+      LOAD ORDER IS CRITICAL — each module depends on the ones above it.
+      audio-engine  →  instruments  →  darkmode
+      →  recorder   →  sargam-roll  →  game  →  app
+    -->
+    <script src="./js/audio-engine.js"></script>
+    <script src="./js/instruments.js"></script>
+    <script src="./js/darkmode.js"></script>
+    <script src="./js/recorder.js"></script>
+    <script src="./js/sargam-roll.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
